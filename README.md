@@ -28,7 +28,7 @@ source ./bash/launch_convert.sh
 source ./bash/launch_infer.sh
 ```
 
-## To deploy and run the web app
+### To deploy and run the web app
 ```
 source ./bash/launch-triton.sh
 ```
