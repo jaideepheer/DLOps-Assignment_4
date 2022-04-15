@@ -18,3 +18,5 @@ data
     ├── Tuberculosis
     └── Tuberculosis.metadata.xlsx
 ```
+
+Finally, run the `gen_data_csv.py` file which will generate `train.csv` and `test.csv` dataset split files.
