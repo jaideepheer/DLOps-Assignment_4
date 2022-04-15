@@ -2,6 +2,44 @@
 
 > Jaideep Singh Heer (M20CS056)
 
+## How to run
+
+First, prepare data using the instructions in [/data](./data) folder's readme.
+
+Then, ensure `kubectl`is available and properly configered to allocate GPUs to pods/jobs.
+
+Since `wandb` is used log results, you need to get your wandb api key and set it in your current shell environment,
+```
+WANDB_API_KEY="<WANDB_API_KEY>"
+```
+
+### To train all models
+```
+source ./bash/launch_train.sh
+```
+
+### To convert using tensorRT
+```
+source ./bash/launch_convert.sh
+```
+
+### To infer
+```
+source ./bash/launch_infer.sh
+```
+
+## To deploy and run the web app
+```
+source ./bash/launch-triton.sh
+```
+
+Note the `HTTP` and `gRPC` ports provided by the above comand and run,
+```
+source ./bash/launch-client.sh
+```
+
+The above command give you the link to open the web app where you can use `perf-analyser` to measure model performance.
+
 ## Code
 
 All project code can be found at: https://github.com/jaideepheer/DLOps-Assignment_4
